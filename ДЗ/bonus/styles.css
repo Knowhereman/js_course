@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: 'Caveat', cursive;
+	font-size: 30px;
+}
+
+table{
+	border: 2px rgba(145,145,145,0.20) groove;
+	margin: auto;
+	width: 500px;
+}
+table td:first-child{
+	width: 150px;
+}
+table td:last-child{
+	text-align: center;
+}
+h1{
+	text-align: center;
+}
+ul {
+	margin-left: 80px;
+}
+span{
+	margin-left: 120px;
+}
