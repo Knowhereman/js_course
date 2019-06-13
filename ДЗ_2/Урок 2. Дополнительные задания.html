@@ -38,7 +38,7 @@
 		var x1 = prompt("Number 1");
 		var x2 = prompt("Number 2");
 		var x3 = prompt("Number 3");
-		var max = 0;
+		var max = -Infinity;
 		if (max < x1){
 			max = x1;
 		}
@@ -53,7 +53,7 @@
 		var a = 0;
         var b = 10;
         var sum = 0;
-		 if (x1 > a && x1 < b){
+		if (x1 > a && x1 < b){
             sum -= -x1;//sum = sum - (-x1);
         }
         if (x2 > a && x2 < b){
@@ -65,7 +65,7 @@
         document.write('</br>' + "Cумма: " + sum);
 		
         document.write('</br>' + "Нечетные: " );
-		if (x1 > a && x1 < b && x1%2 == 1){
+	if (x1 > a && x1 < b && x1%2 == 1){
             document.write(" " + x1);
         }
         if (x2 > a && x2 < b && x2%2 == 1){
