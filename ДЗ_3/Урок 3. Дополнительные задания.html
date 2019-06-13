@@ -13,7 +13,14 @@
 <head>
     <title></title>
     <script>
-		var array = [["Vasya ", 66], ["John ", 23], ["Smoke ", 3], ["Drugs ", 58], ["Playing ", 56], ["Drums ", 456]];
+		var array = [
+			["Vasya ", 66], 
+			["John ", 23], 
+			["Smoke ", 3], 
+			["Drugs ", 58], 
+			["Playing ", 56], 
+			["Drums ", 456]
+		];
 		var added = array.unshift(["Vasiliy ", 32]);
 		var added = array.push(["HrenSgory ", 666]);
 		array.sort();
@@ -22,11 +29,11 @@
 		
 		var myArray = ["Цыгель", " Цыгель", " Ай", " Лю", " Лю"];
     	var input = prompt("напишите какую-нибудь фигню");
-    	var number = prompt("введите число");
+    	var number = +prompt("введите число");
     	var added = myArray.splice(number, 0, input);
 		console.log(myArray);
 		
-		var length = prompt("введите число");
+		var length = +prompt("введите число");
     	var array2 = [];
     	for (i = 0; i < length; i++){
 			if(i%2 == 1){
