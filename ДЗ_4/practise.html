@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practise_Lesson4</title>
+</head>
+<body>
+    <!-- 
+        1. Напишите функцию, которая принимает массив в качестве аргумента. Используя slice (), извлеките информацию из массива аргументов и верните новый массив, содержащий элементы «warm» и «sunny».
+
+        ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
+
+        ########
+
+        2. Напишите функцию подсчета градусов Фаренгейта при входящем параметре температуры в цельсиях.
+        Алгоритм пересчета из градусов Цельсия в градусы Фаренгейта - это температура в градусах Цельсия, умноженная на 9/5 плюс 32.         
+
+        ########
+
+        3. Напишите функцию которая бы переворачивала предоставленную строку
+        Возможно, вам придется превратить строку в массив, прежде чем вы можете обратить его. 
+        Ваш результат должен быть строкой.
+        "something"
+
+        ########
+
+        4. Напишите функцию которая возвращает длину самого длинного слова в предложении. 
+        Ваш ответ должен быть числом.
+        "The quick brown fox jumped over the lazy dog and died"
+     -->
+	
+	<script>
+	function firstTask(array){
+        var res = array.slice(2, -2);
+        return res;
+     }
+
+    var words = ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstruck'];
+    var firstTask1 = firstTask(words);
+    console.log(firstTask1);
+		
+	function secondTask(celsDeg){
+        farDeg = celsDeg * 9 / 5 + 32;
+        return farDeg;
+    }
+    
+    var task = +prompt("enter Celsius");
+    var taskRes = secondTask(task);
+    console.log(taskRes);
+
+	var smt = "something";
+    function thirdTask(word){
+        var fullWord = word.split('');
+        console.log(fullWord);
+        var antiWord = [];
+        for (var i = 0; i < fullWord.length; i++){
+            antiWord[fullWord.length - 1 - i] = fullWord[i];
+        }
+        var res = antiWord.join('');
+        return res;
+    }
+    var thirdTask1 = thirdTask(smt);
+    console.log(thirdTask1);
+		
+	function fourthTask(sent){
+        var sentense = sent.split(' ');
+        var max = 0;
+        var word;
+        for (var i = 0; i < sentense.length; i++){
+            word = sentense[i].split('');
+            if (word.length > max){
+                max = word.length;
+            }
+        }
+        return max;
+    }
+    var sentense1 = "The quick brown fox jumped over the lazy dog and died immediately";
+    var fourthTask1 = fourthTask(sentense1);
+    console.log(fourthTask1);
+	</script>
+</body>
+</html>
