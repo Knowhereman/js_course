@@ -18,10 +18,7 @@
     
 </head>
 <body>
-<ul>
-	<li></li>
-	<li></li>
-</ul>
+
 	
 	<script type="text/javascript">
 		
@@ -49,12 +46,12 @@
 		
 		var name = prompt("Имя");
 		var surName = prompt("Фамилия");
-		var age = prompt("Возраст");
+		var age = +prompt("Возраст");
 		document.write("<br>" + name + " " + surName + ", " + age + " yrs.");
 		
 		
-		var userAge = prompt("Age");
-		var answer = confirm("Are You" + userAge + " years old?");
+		var userAge = +prompt("Age");
+		var answer = confirm("Are You " + userAge + " years old?");
 		alert(answer);
 		
     </script> 

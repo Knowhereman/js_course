@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+	<!-- 
+		7. Массив watchList содержит объекты с информацией о нескольких фильмах. Используйте filter и map для возврата нового массива объектов только с title и rating, но где imdbRating больше или равен 8.0.
+
+		 -->
+</head>
+
+<body>
+	<script>
+         var filteredList = watchList.filter(function(item){
+            return item["imdbRating"] > 8
+        }).map(function(item2){
+            return{
+                "Title": item2["Title"],
+                "imdbRating": item2["imdbRating"],
+            }
+        })
+        console.log(filteredList);
+	</script>
+</body>
+</html>

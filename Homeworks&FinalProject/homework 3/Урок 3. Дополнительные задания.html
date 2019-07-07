@@ -1,0 +1,66 @@
+﻿<!-- 
+    1. Сделать собственные примеры методов применяемых для массивов.
+
+    2. Создать программу, выполняющую вставку элемента в массив после элемента, значение которого укажет пользователь.
+
+    3. Создать многомерный массив, размер массива получить от пользователя. Каждый нечётный подмассив заполнить значением 'odd', а чётный - 'even'. Размер каждого вложенного массива - 3.
+
+    4. Создать два произвольных массива: один массив - любимая спортивная команда / модели автомобилей / города, во втором - количество игроков в команде / объем двигателя / количество жителей в городе. Объединить данные из двух массивов и вывести их в одну строку. 
+    
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+		var array = [
+			["Vasya ", 66], 
+			["John ", 23], 
+			["Smoke ", 3], 
+			["Drugs ", 58], 
+			["Playing ", 56], 
+			["Drums ", 456]
+		];
+		var added = array.unshift(["Vasiliy ", 32]);
+		var added = array.push(["HrenSgory ", 666]);
+		array.sort();
+		var added = array.splice(3, 2, ["Sveta", 11], ["Yulia", 00]);
+		console.log(array);
+		
+		var myArray = ["Цыгель", " Цыгель", " Ай", " Лю", " Лю"];
+    	var input = prompt("напишите какую-нибудь фигню");
+    	var number = +prompt("введите число");
+    	var added = myArray.splice(number, 0, input);
+		console.log(myArray);
+		
+		var length = +prompt("введите число");
+    	var array2 = [];
+    	for (i = 0; i < length; i++){
+			if(i%2 == 1){
+				array2[i] = ["odd", "odd", "odd"];
+			} else{
+				array2[i] = ["even", "even", "even"];
+			}
+		}
+		//var one = ["one", "one", "one"];
+		//for (i = 0; i < length; i++){
+		//	if(i%2 == 1){
+		//		array2.splice(i, 0, one)
+		//	}
+		//}
+		console.log(array2);
+
+		var games = ["football", "basketball", "hockey", "handball", "volleyball"];
+    	var players = [11, 5, 6, 7, 6];
+    	var myArray2 = [];
+		for (i = 0; i < games.length; i++){
+			myArray2[i] = [games[i], players[i]];
+		}
+		console.log(myArray2);
+	</script>
+      
+</head>
+	
+<body>
+</body>
+</html>

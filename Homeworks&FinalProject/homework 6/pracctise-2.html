@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+	<!-- 
+		2. Завершите написание функции getArrayOfUsers, чтобы она возвращала массив, содержащий все свойства объекта, который он получает в качестве аргумента.
+		 -->
+</head>
+
+<body>
+	
+	<script>
+             let users = {
+            Alan: {
+                age: 27,
+                online: false
+            },
+            Jeff: {
+                age: 32,
+                online: true
+            },
+            Sarah: {
+                age: 48,
+                online: false
+            },
+            Ryan: {
+                age: 19,
+                online: true
+            }
+        };
+
+        function getArrayOfUsers(obj) {
+			var newArray = Object.entries(obj);
+			return newArray;
+		}
+		var res = getArrayOfUsers(users);
+        console.log(getArrayOfUsers(users));
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Документ без названия</title>
+	<!-- 
+		 4. Используйте метод some внутри функции checkPositive, чтобы проверить, является ли какой-либо элемент в arr положительным. Функция должна возвращать логическое значение.
+		 -->
+</head>
+
+<body>
+	
+	<script>
+        function checkPositive(arr) {
+			return arr.some(function(n) {
+					 return n > 0;
+					 })
+		}
+
+        console.log(checkPositive([1, 2, 3, -4, 5]));
+	</script>
+</body>
+</html>

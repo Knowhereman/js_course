@@ -1,0 +1,122 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* LAYOUT */
+
+
+
+
+
+
+
+.container3 { 
+	width:1000px; 
+	height:477px;
+	overflow:hidden; 
+	position:relative; 
+	cursor:pointer;
+	z-index: 1;
+}
+
+.slides3 {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:1000px; 
+	height:477px; 
+	margin:0 auto; 
+}
+
+.slides3 > div { 
+	position:absolute; 
+	top:0;
+	width:1000px; 
+	display:none;
+}
+
+#loopedSlider3 { 
+	margin:0 auto; 
+	width:1000px;
+	height:477px;
+	position:relative;  
+	
+}
+
+#wrap3 { 
+	margin:0 auto; 
+	width:1000px;
+	height:477px;
+	background-image:none;
+	padding:2px;
+	position:relative; 
+	clear:both; 
+}
+
+a.orange-prev {
+	background-image:url(images/orange-prev.png);
+	height:41px;
+	width:47px;
+	display: block;
+	text-indent: -9999px;
+	float:left;
+	position: relative;
+	top:280px;
+	z-index: 100;
+}
+
+a.orange-next {
+	background-image:url(images/orange-next.png);
+	height:41px;
+	width:47px;
+	display: block;
+	text-indent: -9999px;
+	float: right;
+	position: relative;
+	top:280px;
+	z-index: 100;
+}

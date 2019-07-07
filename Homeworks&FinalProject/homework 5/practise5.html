@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practise_lesson_5</title>
+</head>
+<body>
+    <!-- 
+        1. Обрезать строку (первый аргумент), если она длиннее заданной максимальной длины строки (второй аргумент). Вернуть усеченную строку с ... окончанием.
+
+        function truncateString(str, num) {
+        // Clear out that junk in your trunk
+        return str;
+        }
+
+        truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+        2. Создайте функцию, которая просматривает массив (первый аргумент) и возвращает первый элемент в массиве, который проходит проверку на истинность (второй аргумент). Если ни один элемент не проходит тест, вернуть undefined.
+
+        function findElement(arr, func) {
+        var test = 0;
+        3) if(func(test)){
+            return test;
+        }
+        return num;
+        }
+
+        findElement([1, 2, 3, 4], function(num) {return num % 2 === 0} );
+
+        3. Проверьте, классифицировано ли значение как логический примитив. Верните true или false.
+
+        Булевы примитивы истинны и ложны.
+
+        function booWho(bool) {
+        return bool;
+        }
+
+        booWho(null);        
+     -->
+
+    <script>
+        function truncateString(sent, numb){
+            var fullWord = sent.split('');
+            var newWord = [];
+            for (var i = 0; i < numb; i++){
+                newWord[i] = fullWord[i]; 
+            }
+            var res = newWord.join('');
+            res += "..."
+            console.log(res);
+        }
+        truncateString("A-tisket a-tasket A green and yellow basket", 8);
+
+        function num(n){
+            if(n % 2 === 0){
+                return true;
+            } else{
+                return false;
+            }
+        }
+        function secondTask (array, func){ 
+            console.log(array);
+            for (var j = 0; j < array.length; j++){
+                if (func(array[j]) == true){
+                    return array[j];
+                }
+                if (j == array.length - 1){
+                    return "Nope";
+                }
+            }
+        }
+
+        var ans = secondTask([1, 2, 3, 3], num);
+        console.log (ans);
+
+        function booWho(bool) {
+            var check = typeof bool;
+            if (check == 'boolean'){
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var asn = booWho(null);
+        console.log(asn);   
+
+    </script>
+</body>
+</html>
