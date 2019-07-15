@@ -1,5 +1,5 @@
 body {
-  background-color: #373636;
+  background-color: white;
 }
 
 .wrapper {
@@ -116,12 +116,12 @@ ul.left-menu > li > a {
 
 @font-face {
   font-family: "Krinkes Regular PERSONAL USE";
-  src: "fonts/KrinkesRegularPERSONAL.ttf";
+  src: "fonts/KrinkesDecorPERSONAL.ttf";
 }
 
 .logo {
   font-size: 72px;
-  font-family: Krinkes Decor PERSONAL USE;
+  font-family: Krinkes Regular PERSONAL USE;
   color: black;
   margin-top: 35px;
   text-decoration: none;
@@ -143,6 +143,8 @@ ul.left-menu > li > a {
   font-family: 'Lato', sans-serif;
   width: 90px;
   margin-top: 13px;
+  position: relative;
+  z-index: 999;
 }
 
 ul {
@@ -238,7 +240,7 @@ ul.menu-r > li:hover > ul.submenu-r {
 	transform: translate(-50%, -50%);
 }
 #modal img {
-	 box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     padding: 1px;
 }
 #closeBtn{
@@ -347,6 +349,7 @@ ul.menu-r > li:hover > ul.submenu-r {
 }
 
 .carousel-inner {
+	margin: auto 0;
 	position: relative;
 	overflow: hidden;
 	width: 100%;

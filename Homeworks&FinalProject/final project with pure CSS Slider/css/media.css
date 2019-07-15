@@ -18,11 +18,17 @@
 .container>div{
 	max-height: 350px;
 	height: 100%;
+	position: relative;
 }
 .container img{
 	max-width: 100%;
 }
-
+.container p{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
 
 .rectangle{
 	display: flex;
@@ -40,10 +46,10 @@
 }
 .rectangle p{
 	font-family: 'Lato', sans-serif;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: bold;
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 55px;
 }
 .rectangle i{
 	color: white;
@@ -114,6 +120,7 @@
   }
 .container{
 	grid-template-columns: auto auto;
+	justify-content: center;
 }
 	
 .rectangle{
@@ -124,8 +131,8 @@
 	margin-top: 2px;
 	}
 .rectangle p{
-		font-size: 18px;
-		margin-top: 6px;
+	font-size: 17px;
+	margin-top: 6px;
 	}
 .rectangle-s{
 	display: none;
@@ -155,6 +162,7 @@
 }
 .container{
 	grid-template-columns: auto;
+	justify-content: center;
 }
 .line hr{
 	display: none;
@@ -179,6 +187,7 @@
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 90px;
+	font-family: 'Lato', sans-serif;
 	}
 .rect2{
 	background-image: url("../image/Rectangle2.png");
@@ -186,6 +195,7 @@
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 90px;
+	font-family: 'Lato', sans-serif;
 	}
 .rect3{
 	background-image: url("../image/Rectangle3.png");
@@ -193,6 +203,7 @@
 	background-repeat: no-repeat;
 	width: 300px;
 	height: 90px;
+	font-family: 'Lato', sans-serif;
 	}
 .rectangle-s a{
 	text-decoration: none;

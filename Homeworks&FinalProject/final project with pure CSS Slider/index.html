@@ -17,9 +17,7 @@
  </head>
 
 <body >
-
-	<div class="wrapper">
-    	<div class="top">
+	<div class="top">
     		<a class="call" href="#">&#9742;&emsp; Call +001 555 801</a>
     			<ul class="top-menu">
     				<li ><a href="#">&emsp;WELCOME MSG! &emsp;  |</a>
@@ -32,6 +30,8 @@
     				</li>
 				</ul>
                </div>
+	<div class="wrapper">
+    	
                
            <div class="header">
             	<ul class="left-menu">
@@ -157,15 +157,31 @@
 		    <hr>
 		</div>
 		
-        <div class="container">
-			<div><img src="image/41.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/42.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/43.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/45.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/44.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/46.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/47.jpg" width="300" height="345" alt=""/></div>
-			<div><img src="image/48.jpg" width="300" height="345" alt=""/></div>
+        <div  class="container">
+			<div id="divHov1"><img src="image/41.jpg" width="300" height="345" alt=""/>
+				 <p id="hover1"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov2"><img src="image/42.jpg" width="300" height="345" alt=""/>
+			     <p id="hover2"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov3"><img src="image/43.jpg" width="300" height="345" alt=""/>
+			     <p id="hover3"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov4"><img src="image/45.jpg" width="300" height="345" alt=""/>
+			     <p id="hover4"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov5"><img src="image/44.jpg" width="300" height="345" alt=""/>
+			     <p id="hover5"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov6"><img src="image/46.jpg" width="300" height="345" alt=""/>
+			     <p id="hover6"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov7"><img src="image/47.jpg" width="300" height="345" alt=""/>
+			     <p id="hover7"><img src="image/shadow.png" alt="" ></p>
+			</div>
+			<div id="divHov8"><img src="image/48.jpg" width="300" height="345" alt=""/>
+			     <p id="hover8"><img src="image/shadow.png" alt="" ></p>
+			</div>
 		  
 		</div>
 		
@@ -248,15 +264,78 @@
         <img src="image/vjJM6An.gif" alt="">
     </div>
 	<script>
-		$('#film').on('click', function(){
-            
-            $('#modal').show(2000);
+		   $('#film').on('click', function(){
+            $('#modal').show(2000);      
         })
-
         $('#closeBtn').on('click', function(e) {
             $('#modal').hide();
-            $('body').removeClass('hovered');
+            console.log(e);
         })
+        var modal = document.getElementById('modal');
+        var btn = document.getElementById('film');
+        $(document).on('click', function(e) {
+            if(e.target != modal && e.target != btn){
+                $('#modal').hide(2000);
+            }
+        });
+		
+		$(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#myBtn').fadeIn();
+        } else {
+            $('#myBtn').fadeOut();
+        }
+    });
+    $('#myBtn').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 400);
+        return false;
+    });
+});
+		
+	$('#divHov1').hover(function(){
+		$('#hover1').show();
+	}, function(){
+		$('#hover1').hide();
+	});
+
+	$('#divHov2').hover(function(){
+	$('#hover2').show();
+}, function(){
+	$('#hover2').hide();
+});
+	$('#divHov3').hover(function(){
+	$('#hover3').show();
+}, function(){
+	$('#hover3').hide();
+});
+	$('#divHov4').hover(function(){
+	$('#hover4').show();
+}, function(){
+	$('#hover4').hide();
+});
+	$('#divHov5').hover(function(){
+	$('#hover5').show();
+}, function(){
+	$('#hover5').hide();
+});
+	$('#divHov6').hover(function(){
+	$('#hover6').show();
+}, function(){
+	$('#hover6').hide();
+});
+	$('#divHov7').hover(function(){
+	$('#hover7').show();
+}, function(){
+	$('#hover7').hide();
+});
+	$('#divHov8').hover(function(){
+	$('#hover8').show();
+}, function(){
+	$('#hover8').hide();
+});
 	</script>
 </body>
 </html>
